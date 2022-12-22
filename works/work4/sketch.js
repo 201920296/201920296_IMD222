@@ -1,13 +1,10 @@
-
+let squareColor;
+let circleColor;
+let baseColor;
 let squareX, squareY;
 let circleX, circleY;
 let squareSize = 90;
 let circleSize = 93;
-
-let squareColor;
-let circleColor;
-let baseColor;
-
 let squareOver = false;
 let circleOver = false;
 
@@ -18,9 +15,9 @@ function setup() {
   let canvas = createCanvas(boundingRects.width, boundingRects.height);
   canvas.parent("p5Canvas");
   
-  squareColor = color(0);
-  circleColor = color(255);
-  baseColor = color(102);
+  squareColor = color(255);
+  circleColor = color(25);
+  baseColor = color(150);
   circleX = width/2+circleSize/2+10;
   circleY = height/2;
   squareX = width/2-squareSize-10;

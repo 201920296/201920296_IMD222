@@ -1,7 +1,7 @@
 var x = 100,
-  y = 200,
-  radius = 30,
-  xspd, yspd;
+    y = 200,
+    radius = 30,
+    xspd, yspd;
 var i;
 var j;
 var targetX;

@@ -36,6 +36,10 @@ function draw() {
   }
 }
 
+function mouseReleased() {
+  painting = false;
+}
+
 function mousePressed() {
   next = 0;
   painting = true;
@@ -44,9 +48,6 @@ function mousePressed() {
   paths.push(new Path());
 }
 
-function mouseReleased() {
-  painting = false;
-}
 
 class Path {
   constructor() {
@@ -83,13 +84,6 @@ class Particle {
     this.drag = 0.95;
     this.lifespan = 255;
   }
-
-  update() {
-    this.position.add(this.velocity);
-    this.velocity.mult(this.drag);
-    this.lifespan--;
-  }
-
   display(other) {
     stroke(0, this.lifespan);
     fill(0, this.lifespan/2);    
@@ -98,4 +92,10 @@ class Particle {
       line(this.position.x, this.position.y, other.position.x, other.position.y);
     }
   }
+  update() {
+    this.position.add(this.velocity);
+    this.velocity.mult(this.drag);
+    this.lifespan--;
+  }
+
 }

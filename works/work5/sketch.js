@@ -27,14 +27,13 @@ function branch(h) {
   h *= 0.66;
   if (h > 2) {
     push();
-    rotate(theta);
+    rotate(-theta);
     line(0, 0, 0, -h);
     translate(0, -h);
     branch(h);
     pop();
-    
     push();
-    rotate(-theta);
+    rotate(theta);
     line(0, 0, 0, -h);
     translate(0, -h);
     branch(h);
