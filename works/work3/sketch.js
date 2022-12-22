@@ -12,17 +12,17 @@ function setup() {
   let canvas = createCanvas(boundingRects.width, boundingRects.height);
   canvas.parent("p5Canvas");
   
+  brushSizeSlider = createButton('Brush Size Slider');
+  sizeSlider = createSlider(1, 32, 4, 0.1);
+
   saveButton = createButton('save');
   saveButton.mousePressed(saveFile);
-
-  clearButton = createButton('clear');
-  clearButton.mousePressed(clearScreen);
 
   fullscreenButton = createButton('Full Screen');
   fullscreenButton.mousePressed(screenFull);
 
-  brushSizeSlider = createButton('Brush Size Slider');
-  sizeSlider = createSlider(1, 32, 4, 0.1);
+  clearButton = createButton('clear');
+  clearButton.mousePressed(clearScreen);
 }
 
 function saveFile() {
