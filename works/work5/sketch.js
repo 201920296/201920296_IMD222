@@ -10,6 +10,9 @@ function setup() {
   e1 = new Eye(250, 16, 120);
   e2 = new Eye(164, 185, 80);
   e3 = new Eye(420, 230, 220);
+  e4 = new Eye(570, 30, 185);
+  e5 = new Eye(120, 80, 50);
+  e6 = new Eye(90, 300, 90);
 }
 
 function draw() {
@@ -17,9 +20,15 @@ function draw() {
   e1.update(mouseX, mouseY);
   e2.update(mouseX, mouseY);
   e3.update(mouseX, mouseY);
+  e4.update(mouseX, mouseY);
+  e5.update(mouseX, mouseY);
+  e6.update(mouseX, mouseY);
   e1.display();
   e2.display();
   e3.display();
+  e4.display();
+  e5.display();
+  e6.display();
 }
 
 function Eye(tx, ty, ts) {
