@@ -35,7 +35,6 @@ function draw() {
       rect(i * w, j * w, w-1, w-1);
     }
   }
-
 }
 
 function mousePressed() {
@@ -52,10 +51,7 @@ function init() {
   }
 }
 
-
 function generate() {
-
-  
   for (let x = 1; x < columns - 1; x++) {
     for (let y = 1; y < rows - 1; y++) {
       let neighbors = 0;
@@ -72,7 +68,6 @@ function generate() {
       else                                             next[x][y] = board[x][y];
     }
   }
-
   let temp = board;
   board = next;
   next = temp;
